@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #3867d6;
+    font-size: 42px;
+}
+
+h2 {
+    color: #3867d6;
+}
+
+h3 {
+    color: #20bf6b;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+#home {
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,.08);
+}
+
+.notice {
+    background: #fff8e6;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 25px 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#assessment {
+    display: none;
+}
+
+.question {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+.question h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.question label {
+    display: block;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.question label:hover {
+    background: #f0f4ff;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    accent-color: #3867d6;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 28px;
+    background: #3867d6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2854b5;
+}
+
+#result {
+    background: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+#result h2 {
+    color: #3867d6;
+}
+
+#result h3 {
+    color: #20bf6b;
+}
+
+#result li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.result-section {
+    margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    #home {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .question {
+        padding: 18px;
+    }
+}
+.about-section {
+    background: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+footer {
+    margin-top: 50px;
+    padding: 35px 20px;
+    text-align: center;
+    background: #3867d6;
+    color: white;
+    border-radius: 18px 18px 0 0;
+}
+
+footer h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.footer-note {
+    font-size: 14px;
+    opacity: 0.9;
+}
