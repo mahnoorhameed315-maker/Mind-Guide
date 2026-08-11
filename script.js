@@ -23,7 +23,9 @@ function analyzeAnswers() {
 
         if (!selected) {
 
-            alert("Please answer all 15 questions before seeing your results.");
+            alert(
+                "Please answer all 15 questions before seeing your results."
+            );
 
             return;
         }
@@ -279,9 +281,7 @@ function analyzeAnswers() {
         let percentage =
             (area.score / area.max) * 100;
 
-
         let level;
-
 
         if (percentage <= 35) {
 
@@ -297,7 +297,6 @@ function analyzeAnswers() {
         }
 
 
-        // Create suggestion list
         let suggestionList = "";
 
         area.suggestions.forEach(function(item) {
@@ -326,9 +325,7 @@ function analyzeAnswers() {
                 <h4>💡 Suggestions for improvement</h4>
 
                 <ul class="suggestion-list">
-
                     ${suggestionList}
-
                 </ul>
 
             </div>
@@ -401,9 +398,7 @@ function analyzeAnswers() {
     document.getElementById("result").scrollIntoView({
         behavior: "smooth"
     });
-
 }
-
 
 
 // --------------------------------
@@ -431,6 +426,4 @@ function restartAssessment() {
         top: 0,
         behavior: "smooth"
     });
-
 }
-
