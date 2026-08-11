@@ -1,317 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pen</title>
-  </head>
-  <body>
 
+    <link rel="stylesheet" href="./style.css">
+
+    <title>MindGuide | Psychology Self-Reflection</title>
+</head>
+
+<body>
+
+    <!-- HOME SECTION -->
+    <div id="home">
+
+        <h1>🧠 MindGuide</h1>
+
+        <h2>Understand Yourself. Reflect. Grow.</h2>
+
+        <h3>Hi, I'm Mahnoor 👋</h3>
+
+        <p>
+            I am a Psychology student interested in understanding human
+            emotions, thoughts, behavior, and psychological well-being.
+        </p>
+
+        <p>
+            I created MindGuide as a psychology-based self-reflection
+            project. It gives people a simple space to reflect on their
+            emotions, stress, sleep, motivation, concentration, and
+            everyday well-being.
+        </p>
+
+        <p>
+            Answer the questions honestly and MindGuide will provide
+            general suggestions based on your responses.
+        </p>
+
+        <div class="notice">
+            <strong>Important:</strong> MindGuide is designed for
+            self-reflection and psychological awareness. It is not a
+            diagnostic test and does not replace professional
+            psychological or medical support.
+        </div>
+
+        <button onclick="startAssessment()">
+            Start Your Self-Reflection 🌱
+        </button>
+
+    </div>
+
+
+    <!-- ASSESSMENT SECTION -->
+    <div id="assessment">
+
+        <h1>🧠 Self-Reflection Assessment</h1>
+
+        <p>
+            Answer each question based on how you have been feeling
+            recently. Choose the answer that fits you best.
+        </p>
+
+        <hr>
+
+
+        <div class="question">
+            <h2>1. How have you been feeling recently?</h2>
+
+            <label><input type="radio" name="q1" value="1"> Very good</label>
+            <label><input type="radio" name="q1" value="2"> Good</label>
+            <label><input type="radio" name="q1" value="3"> Not very good</label>
+            <label><input type="radio" name="q1" value="4"> Very difficult</label>
+        </div>
+
+
+        <div class="question">
+            <h2>2. How would you describe your stress level?</h2>
+
+            <label><input type="radio" name="q2" value="1"> Very low</label>
+            <label><input type="radio" name="q2" value="2"> Low</label>
+            <label><input type="radio" name="q2" value="3"> Moderate</label>
+            <label><input type="radio" name="q2" value="4"> High</label>
+        </div>
+
+
+        <div class="question">
+            <h2>3. How well have you been sleeping?</h2>
+
+            <label><input type="radio" name="q3" value="1"> Very well</label>
+            <label><input type="radio" name="q3" value="2"> Well</label>
+            <label><input type="radio" name="q3" value="3"> Not very well</label>
+            <label><input type="radio" name="q3" value="4"> Very poorly</label>
+        </div>
+
+
+        <div class="question">
+            <h2>4. How often do you feel tired during the day?</h2>
+
+            <label><input type="radio" name="q4" value="1"> Rarely</label>
+            <label><input type="radio" name="q4" value="2"> Sometimes</label>
+            <label><input type="radio" name="q4" value="3"> Often</label>
+            <label><input type="radio" name="q4" value="4"> Almost every day</label>
+        </div>
+
+
+        <div class="question">
+            <h2>5. How difficult is it for you to concentrate?</h2>
+
+            <label><input type="radio" name="q5" value="1"> Not difficult</label>
+            <label><input type="radio" name="q5" value="2"> Slightly difficult</label>
+            <label><input type="radio" name="q5" value="3"> Quite difficult</label>
+            <label><input type="radio" name="q5" value="4"> Very difficult</label>
+        </div>
+
+
+        <div class="question">
+            <h2>6. How often do you worry about things?</h2>
+
+            <label><input type="radio" name="q6" value="1"> Rarely</label>
+            <label><input type="radio" name="q6" value="2"> Sometimes</label>
+            <label><input type="radio" name="q6" value="3"> Often</label>
+            <label><input type="radio" name="q6" value="4"> Almost constantly</label>
+        </div>
+
+
+        <div class="question">
+            <h2>7. How motivated have you felt recently?</h2>
+
+            <label><input type="radio" name="q7" value="1"> Very motivated</label>
+            <label><input type="radio" name="q7" value="2"> Motivated</label>
+            <label><input type="radio" name="q7" value="3"> Less motivated</label>
+            <label><input type="radio" name="q7" value="4"> Very unmotivated</label>
+        </div>
+
+
+        <div class="question">
+            <h2>8. How often do you feel overwhelmed by your responsibilities?</h2>
+
+            <label><input type="radio" name="q8" value="1"> Never</label>
+            <label><input type="radio" name="q8" value="2"> Sometimes</label>
+            <label><input type="radio" name="q8" value="3"> Often</label>
+            <label><input type="radio" name="q8" value="4"> Very often</label>
+        </div>
+
+
+        <div class="question">
+            <h2>9. How comfortable are you talking about your feelings?</h2>
+
+            <label><input type="radio" name="q9" value="1"> Very comfortable</label>
+            <label><input type="radio" name="q9" value="2"> Somewhat comfortable</label>
+            <label><input type="radio" name="q9" value="3"> Not very comfortable</label>
+            <label><input type="radio" name="q9" value="4"> Very uncomfortable</label>
+        </div>
+
+
+        <div class="question">
+            <h2>10. How connected do you feel to people around you?</h2>
+
+            <label><input type="radio" name="q10" value="1"> Very connected</label>
+            <label><input type="radio" name="q10" value="2"> Somewhat connected</label>
+            <label><input type="radio" name="q10" value="3"> Not very connected</label>
+            <label><input type="radio" name="q10" value="4"> Very disconnected</label>
+        </div>
+
+
+        <div class="question">
+            <h2>11. How often do you have difficulty relaxing?</h2>
+
+            <label><input type="radio" name="q11" value="1"> Rarely</label>
+            <label><input type="radio" name="q11" value="2"> Sometimes</label>
+            <label><input type="radio" name="q11" value="3"> Often</label>
+            <label><input type="radio" name="q11" value="4"> Almost always</label>
+        </div>
+
+
+        <div class="question">
+            <h2>12. How do you usually handle stressful situations?</h2>
+
+            <label><input type="radio" name="q12" value="1"> I stay calm and solve the problem</label>
+            <label><input type="radio" name="q12" value="2"> I take some time and then deal with it</label>
+            <label><input type="radio" name="q12" value="3"> I become worried or upset</label>
+            <label><input type="radio" name="q12" value="4"> I usually avoid the situation</label>
+        </div>
+
+
+        <div class="question">
+            <h2>13. How satisfied are you with your daily routine?</h2>
+
+            <label><input type="radio" name="q13" value="1"> Very satisfied</label>
+            <label><input type="radio" name="q13" value="2"> Mostly satisfied</label>
+            <label><input type="radio" name="q13" value="3"> Not very satisfied</label>
+            <label><input type="radio" name="q13" value="4"> Very dissatisfied</label>
+        </div>
+
+
+        <div class="question">
+            <h2>14. How often do you do things that you enjoy?</h2>
+
+            <label><input type="radio" name="q14" value="1"> Every day</label>
+            <label><input type="radio" name="q14" value="2"> Several times a week</label>
+            <label><input type="radio" name="q14" value="3"> Occasionally</label>
+            <label><input type="radio" name="q14" value="4"> Rarely</label>
+        </div>
+
+
+        <div class="question">
+            <h2>15. How would you describe your overall well-being?</h2>
+
+            <label><input type="radio" name="q15" value="1"> Very good</label>
+            <label><input type="radio" name="q15" value="2"> Good</label>
+            <label><input type="radio" name="q15" value="3"> Okay</label>
+            <label><input type="radio" name="q15" value="4"> Needs improvement</label>
+        </div>
+
+
+        <button onclick="analyzeAnswers()">
+            See My Results 🧠
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+    <div class="about-section">
+
+        <h2>👩‍💻 About the Creator</h2>
+
+        <p>
+            Hi! I'm Mahnoor, a Psychology student with an interest in
+            human behavior, emotions, mental well-being, and psychological
+            awareness.
+        </p>
+
+        <p>
+            I created MindGuide as a learning project to combine my
+            interest in psychology with web development. The purpose is
+            to give people a simple way to reflect on different areas
+            of their everyday well-being.
+        </p>
+
+        <p>
+            MindGuide is designed for educational and self-reflection
+            purposes. It is not intended to diagnose any psychological
+            condition.
+        </p>
+
+    </div>
+
+
+    <!-- HOW IT WORKS -->
+    <div class="how-section">
+
+        <h2>🧠 How MindGuide Works</h2>
+
+        <div class="how-card">
+            <h3>1️⃣ Answer</h3>
+            <p>
+                Answer 15 simple questions about your recent emotions,
+                stress, sleep, motivation, concentration, and daily
+                well-being.
+            </p>
+        </div>
+
+        <div class="how-card">
+            <h3>2️⃣ Reflect</h3>
+            <p>
+                Your responses are organized into different areas of
+                psychological well-being to help you understand where
+                you may need more attention.
+            </p>
+        </div>
+
+        <div class="how-card">
+            <h3>3️⃣ Understand</h3>
+            <p>
+                MindGuide explains the areas that may be affecting your
+                everyday experience and highlights your main area of focus.
+            </p>
+        </div>
+
+        <div class="how-card">
+            <h3>4️⃣ Improve</h3>
+            <p>
+                You receive simple, practical suggestions that may help
+                you develop healthier everyday habits and coping strategies.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🧠 MindGuide</h3>
+
+        <p>
+            A psychology-based self-reflection project created by Mahnoor.
+        </p>
+
+        <p>
+            © 2026 MindGuide. For educational and self-reflection purposes.
+        </p>
+
+        <p class="footer-note">
+            MindGuide does not provide psychological diagnosis or
+            professional medical advice.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
     <script src="./script.js"></script>
-  </body>
+
+</body>
 </html>
-<div id="home">
-
-    <h1>🧠 MindGuide</h1>
-
-    <h2>Understand Yourself. Reflect. Grow.</h2>
-
-    <h3>Hi, I'm Mahnoor 👋</h3>
-
-    <p>
-        I am a Psychology student interested in understanding human
-        emotions, thoughts, behavior, and psychological well-being.
-    </p>
-
-    <p>
-        I created MindGuide as a psychology-based self-reflection
-        project. It gives people a simple space to reflect on their
-        emotions, stress, sleep, motivation, concentration, and
-        everyday well-being.
-    </p>
-
-    <p>
-        Answer the questions honestly and MindGuide will provide
-        general suggestions based on your responses.
-    </p>
-
-    <div class="notice">
-        <strong>Important:</strong> MindGuide is designed for
-        self-reflection and psychological awareness. It is not a
-        diagnostic test and does not replace professional
-        psychological or medical support.
-    </div>
-
-    <button onclick="startAssessment()">
-        Start Your Self-Reflection 🌱
-    </button>
-
-</div>
-
-
-<div id="assessment">
-
-    <h1>🧠 Self-Reflection Assessment</h1>
-
-    <p>
-        Answer each question based on how you have been feeling
-        recently. Choose the answer that fits you best.
-    </p>
-
-    <hr>
-
-
-    <div class="question">
-        <h2>1. How have you been feeling recently?</h2>
-
-        <label><input type="radio" name="q1" value="1"> Very good</label>
-        <label><input type="radio" name="q1" value="2"> Good</label>
-        <label><input type="radio" name="q1" value="3"> Not very good</label>
-        <label><input type="radio" name="q1" value="4"> Very difficult</label>
-    </div>
-
-
-    <div class="question">
-        <h2>2. How would you describe your stress level?</h2>
-
-        <label><input type="radio" name="q2" value="1"> Very low</label>
-        <label><input type="radio" name="q2" value="2"> Low</label>
-        <label><input type="radio" name="q2" value="3"> Moderate</label>
-        <label><input type="radio" name="q2" value="4"> High</label>
-    </div>
-
-
-    <div class="question">
-        <h2>3. How well have you been sleeping?</h2>
-
-        <label><input type="radio" name="q3" value="1"> Very well</label>
-        <label><input type="radio" name="q3" value="2"> Well</label>
-        <label><input type="radio" name="q3" value="3"> Not very well</label>
-        <label><input type="radio" name="q3" value="4"> Very poorly</label>
-    </div>
-
-
-    <div class="question">
-        <h2>4. How often do you feel tired during the day?</h2>
-
-        <label><input type="radio" name="q4" value="1"> Rarely</label>
-        <label><input type="radio" name="q4" value="2"> Sometimes</label>
-        <label><input type="radio" name="q4" value="3"> Often</label>
-        <label><input type="radio" name="q4" value="4"> Almost every day</label>
-    </div>
-
-
-    <div class="question">
-        <h2>5. How difficult is it for you to concentrate?</h2>
-
-        <label><input type="radio" name="q5" value="1"> Not difficult</label>
-        <label><input type="radio" name="q5" value="2"> Slightly difficult</label>
-        <label><input type="radio" name="q5" value="3"> Quite difficult</label>
-        <label><input type="radio" name="q5" value="4"> Very difficult</label>
-    </div>
-
-
-    <div class="question">
-        <h2>6. How often do you worry about things?</h2>
-
-        <label><input type="radio" name="q6" value="1"> Rarely</label>
-        <label><input type="radio" name="q6" value="2"> Sometimes</label>
-        <label><input type="radio" name="q6" value="3"> Often</label>
-        <label><input type="radio" name="q6" value="4"> Almost constantly</label>
-    </div>
-
-
-    <div class="question">
-        <h2>7. How motivated have you felt recently?</h2>
-
-        <label><input type="radio" name="q7" value="1"> Very motivated</label>
-        <label><input type="radio" name="q7" value="2"> Motivated</label>
-        <label><input type="radio" name="q7" value="3"> Less motivated</label>
-        <label><input type="radio" name="q7" value="4"> Very unmotivated</label>
-    </div>
-
-
-    <div class="question">
-        <h2>8. How often do you feel overwhelmed by your responsibilities?</h2>
-
-        <label><input type="radio" name="q8" value="1"> Never</label>
-        <label><input type="radio" name="q8" value="2"> Sometimes</label>
-        <label><input type="radio" name="q8" value="3"> Often</label>
-        <label><input type="radio" name="q8" value="4"> Very often</label>
-    </div>
-
-
-    <div class="question">
-        <h2>9. How comfortable are you talking about your feelings?</h2>
-
-        <label><input type="radio" name="q9" value="1"> Very comfortable</label>
-        <label><input type="radio" name="q9" value="2"> Somewhat comfortable</label>
-        <label><input type="radio" name="q9" value="3"> Not very comfortable</label>
-        <label><input type="radio" name="q9" value="4"> Very uncomfortable</label>
-    </div>
-
-
-    <div class="question">
-        <h2>10. How connected do you feel to people around you?</h2>
-
-        <label><input type="radio" name="q10" value="1"> Very connected</label>
-        <label><input type="radio" name="q10" value="2"> Somewhat connected</label>
-        <label><input type="radio" name="q10" value="3"> Not very connected</label>
-        <label><input type="radio" name="q10" value="4"> Very disconnected</label>
-    </div>
-
-
-    <div class="question">
-        <h2>11. How often do you have difficulty relaxing?</h2>
-
-        <label><input type="radio" name="q11" value="1"> Rarely</label>
-        <label><input type="radio" name="q11" value="2"> Sometimes</label>
-        <label><input type="radio" name="q11" value="3"> Often</label>
-        <label><input type="radio" name="q11" value="4"> Almost always</label>
-    </div>
-
-
-    <div class="question">
-        <h2>12. How do you usually handle stressful situations?</h2>
-
-        <label><input type="radio" name="q12" value="1"> I stay calm and solve the problem</label>
-        <label><input type="radio" name="q12" value="2"> I take some time and then deal with it</label>
-        <label><input type="radio" name="q12" value="3"> I become worried or upset</label>
-        <label><input type="radio" name="q12" value="4"> I usually avoid the situation</label>
-    </div>
-
-
-    <div class="question">
-        <h2>13. How satisfied are you with your daily routine?</h2>
-
-        <label><input type="radio" name="q13" value="1"> Very satisfied</label>
-        <label><input type="radio" name="q13" value="2"> Mostly satisfied</label>
-        <label><input type="radio" name="q13" value="3"> Not very satisfied</label>
-        <label><input type="radio" name="q13" value="4"> Very dissatisfied</label>
-    </div>
-
-
-    <div class="question">
-        <h2>14. How often do you do things that you enjoy?</h2>
-
-        <label><input type="radio" name="q14" value="1"> Every day</label>
-        <label><input type="radio" name="q14" value="2"> Several times a week</label>
-        <label><input type="radio" name="q14" value="3"> Occasionally</label>
-        <label><input type="radio" name="q14" value="4"> Rarely</label>
-    </div>
-
-
-    <div class="question">
-        <h2>15. How would you describe your overall well-being?</h2>
-
-        <label><input type="radio" name="q15" value="1"> Very good</label>
-        <label><input type="radio" name="q15" value="2"> Good</label>
-        <label><input type="radio" name="q15" value="3"> Okay</label>
-        <label><input type="radio" name="q15" value="4"> Needs improvement</label>
-    </div>
-
-
-    <button onclick="analyzeAnswers()">
-        See My Results 🧠
-    </button>
-
-    <div id="result"></div>
-
-</div>
-<div class="about-section">
-
-    <h2>👩‍💻 About the Creator</h2>
-
-    <p>
-        Hi! I'm Mahnoor, a Psychology student with an interest in
-        human behavior, emotions, mental well-being, and psychological
-        awareness.
-    </p>
-
-    <p>
-        I created MindGuide as a learning project to combine my
-        interest in psychology with web development. The purpose is
-        to give people a simple way to reflect on different areas
-        of their everyday well-being.
-    </p>
-
-    <p>
-        MindGuide is designed for educational and self-reflection
-        purposes. It is not intended to diagnose any psychological
-        condition.
-    </p>
-
-</div>
-<div class="how-section">
-
-    <h2>🧠 How MindGuide Works</h2>
-
-    <div class="how-card">
-
-        <h3>1️⃣ Answer</h3>
-
-        <p>
-            Answer 15 simple questions about your recent emotions,
-            stress, sleep, motivation, concentration, and daily
-            well-being.
-        </p>
-
-    </div>
-
-
-    <div class="how-card">
-
-        <h3>2️⃣ Reflect</h3>
-
-        <p>
-            Your responses are organized into different areas of
-            psychological well-being to help you understand where
-            you may need more attention.
-        </p>
-
-    </div>
-
-
-    <div class="how-card">
-
-        <h3>3️⃣ Understand</h3>
-
-        <p>
-            MindGuide explains the areas that may be affecting your
-            everyday experience and highlights your main area of focus.
-        </p>
-
-    </div>
-
-
-    <div class="how-card">
-
-        <h3>4️⃣ Improve</h3>
-
-        <p>
-            You receive simple, practical suggestions that may help
-            you develop healthier everyday habits and coping strategies.
-        </p>
-
-    </div>
-
-</div>
-<footer>
-
-    <h3>🧠 MindGuide</h3>
-
-    <p>
-        A psychology-based self-reflection project created by Mahnoor.
-    </p>
-
-    <p>
-        © 2026 MindGuide. For educational and self-reflection purposes.
-    </p>
-
-    <p class="footer-note">
-        MindGuide does not provide psychological diagnosis or
-        professional medical advice.
-    </p>
-
-</footer>
